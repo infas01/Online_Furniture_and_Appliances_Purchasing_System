@@ -1,12 +1,11 @@
 import React from "react";
-import Nav from "./nav";
-import { Button } from "@material-tailwind/react"; 
+import MainPage from "./Pages/MainPage/MainPage";
 
 const App = () => 
 {
   return(
     <>
-    <Nav/>
+    <MainPage/>
     </>
   )
 }
