@@ -1,13 +1,11 @@
+import React from 'react';
 import { useEffect, useRef, useState } from "react"
-
+import { Link } from 'react-router-dom'; 
 
 export default () => {
 
     const [state, setState] = useState(false)
     const [drapdownState, setDrapdownState] = useState({ isActive: false, idx: null })
-
-
-    // Replace javascript:void(0) paths with your paths
     
 
     const submenuNav = [
@@ -142,13 +140,14 @@ export default () => {
                                 </form>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" 
-                                       className="block py-3 text-center text-gray-700 hover:text-indigo-600 border rounded-lg md:border-none">
-                                        Log in
+                                    
+                                    <a className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
+                                       Log in
                                     </a>
+                                    
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" 
+                                    <a 
                                        className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
                                         Sign in
                                     </a>

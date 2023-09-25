@@ -1,8 +1,11 @@
 import React from 'react';
 import MainNavBar from '../../components/NavBars/MainNavBar';
 import '../MainPage/MainPage.css';
+import '../../components/Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 
 const MainPage = () => {
+    
   return (
     <div className='ml-5 mr-5 mt-40'>
       <MainNavBar />
@@ -310,9 +313,8 @@ const MainPage = () => {
         </div>
 
     </section>
-
-    
-
+    <Footer/>
+  
     </div>
   );
 };
