@@ -1,6 +1,6 @@
 import React from 'react';
-import { useEffect, useRef, useState } from "react"
-import { Link } from 'react-router-dom'; 
+import { useEffect, useState } from "react"
+import { Button } from '@material-tailwind/react'
 
 export default () => {
 
@@ -9,6 +9,7 @@ export default () => {
     
 
     const submenuNav = [
+        { title: "Home", path: "/Main" ,isDrapdown: false},
         { title: "Furnitures", path: "javascript:void(0)" ,isDrapdown: false},
         { title: "Appliances", path: "javascript:void(0)" ,isDrapdown: false},
         { title: "Hot Deals", path: "javascript:void(0)" ,isDrapdown: false},
@@ -25,8 +26,8 @@ export default () => {
 
 
     return (
-        <header className="text-base mr-10 lg:text-sm fixed top-0 w-full z-50">
-            <div className={`bg-white border-b border-gray-500 mr-10 items-center gap-x-14 px-4 lg:flex lg:px-8 lg:static ${state ? "h-full fixed inset-x-0" : ""}`}>
+        <header className="text-base lg:text-sm fixed top-0 w-full z-50">
+            <div className={`bg-white border-b border-gray-500 items-center gap-x-14 px-4 lg:flex lg:px-8 lg:static ${state ? "h-full fixed inset-x-0" : ""}`}>
                 <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
                     <a href="javascript:void(0)">
                         <img
@@ -139,27 +140,28 @@ export default () => {
                                     </div>
                                 </form>
                                 </li>
+
                                 <li>
-                                    
-                                    <a className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
-                                       Log in
-                                    </a>
-                                    
+                                    <Button  onClick={() => window.location.href="/LogIn"} 
+                                        className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
+                                        Log In
+                                    </Button> 
                                 </li>
-                                <li>
-                                    <a 
-                                       className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
-                                        Sign in
-                                    </a>
+
+                                 <li>
+                                    <Button  onClick={() => window.location.href="/SignUp"} 
+                                        className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
+                                        Sign Up
+                                    </Button> 
                                 </li>
                             </div> 
-                            
                         </ul>
                     </div>
-                    
                     </ul>
                 </div>
             </div>
         </header>
+
+
     )
 }

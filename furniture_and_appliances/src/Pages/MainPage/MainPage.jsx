@@ -7,7 +7,7 @@ import Footer from '../../components/Footer/Footer';
 const MainPage = () => {
     
   return (
-    <div className='ml-5 mr-5 mt-40'>
+    <div className='mt-40'>
       <MainNavBar />
       <div className="bg-white text-gray-600 font-sans leading-normal text-base tracking-normal border border-gray-300 shadow-2xl">
         <div className="carousel relative container mx-auto" style={{ maxWidth: '1600px' }}>
@@ -282,7 +282,7 @@ const MainPage = () => {
 
     </section>
     
-    <div class="h-64 rounded-xl overflow-hidden bg-cover bg-center border border-gray-300 shadow-2xl" 
+    <div class="h-64 overflow-hidden bg-cover bg-center border border-gray-300 shadow-2xl" 
     style={{backgroundImage: 'url("https://images.unsplash.com/photo-1577655197620-704858b270ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=144")',}}>
       <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
             <div class="px-10 max-w-xl">
@@ -296,7 +296,7 @@ const MainPage = () => {
         </div>
       </div>
 
-      <section className="bg-pink-50 py-8 mt-10 mb-10 rounded-xl border border-gray-300 shadow-2xl">
+      <section className="bg-pink-50 py-8 mt-10 mb-10 border border-gray-300 shadow-2xl">
 
         <div className="container py-8 px-6 mx-auto">
 

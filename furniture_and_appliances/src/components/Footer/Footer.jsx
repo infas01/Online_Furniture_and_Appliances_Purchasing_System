@@ -84,7 +84,7 @@ function Footer() {
         }
     ]
   return (
-    <footer className="pt-10 bg-gray-800">
+    <footer className="pt-1 bg-gray-800">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
             
             <div className="flex-1 mt-16 space-y-6 justify-between sm:flex md:space-y-0">
